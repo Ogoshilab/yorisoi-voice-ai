@@ -20,7 +20,6 @@ import express from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import { OpenAI } from "openai";
-import fs from "fs";
 
 dotenv.config();
 
