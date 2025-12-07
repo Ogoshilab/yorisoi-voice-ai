@@ -3,8 +3,18 @@
 // 安全フィルタ・ICF推定・情動スコア・TTS対応
 // ===============================
 
-import icfTags from './icf-tags.json' assert { type: "json" };
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
+// __dirname を使えるようにする
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// JSON を同期的に読む
+const icfTags = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "icf-tags.json"), "utf8")
+);
 
 import express from "express";
 import bodyParser from "body-parser";
