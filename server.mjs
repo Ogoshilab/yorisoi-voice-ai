@@ -3,6 +3,9 @@
 // 安全フィルタ・ICF推定・情動スコア・TTS対応
 // ===============================
 
+import icfTags from './icf-tags.json' assert { type: "json" };
+
+
 import express from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
@@ -23,8 +26,7 @@ const client = new OpenAI({
 let emotionScore = 70;
 let emotionHistory = [];
 
-// ====== ICF タグ辞書 ======
-const icfTags = JSON.parse(fs.readFileSync("./icf-tags.json", "utf8"));
+
 
 // ====== ネガティブ／ポジティブ辞書 ======
 const negativeWords = ["疲れ", "つらい", "不安", "悲しい", "こわい", "もうだめ", "消えたい", "死にたい", "いやだ"];
