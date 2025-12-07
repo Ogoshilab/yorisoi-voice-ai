@@ -1,0 +1,16 @@
+{
+  "name": "yorisoi-voice-ai",
+  "version": "1.0.0",
+  "description": "寄り添い型 音声対話AI プロトタイプ（安全フィルタ付き）",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "body-parser": "^1.20.2",
+    "openai": "^4.70.0",
+    "dotenv": "^16.4.5"
+  }
+}

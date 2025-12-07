@@ -1,0 +1,10 @@
+{
+  "sleep": { "code": "b134", "label": "睡眠機能" },
+  "emotion": { "code": "b152", "label": "感情機能" },
+  "stress": { "code": "d240", "label": "ストレスに対する処理" },
+  "learning": { "code": "d155", "label": "学習能力" },
+  "school": { "code": "d820", "label": "学校教育" },
+  "relationships": { "code": "d710", "label": "対人関係" },
+  "family": { "code": "e310", "label": "直近の家族の支援" },
+  "work": { "code": "d845", "label": "仕事に関連した活動" }
+}
